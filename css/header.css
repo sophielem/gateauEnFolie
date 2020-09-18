@@ -1,0 +1,128 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    background-color: #ffff;
+}
+
+nav {
+    margin-left: 18%;
+}
+nav ul{
+    list-style: none;
+    padding: 10px;
+    width: 77%;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid gray;
+    height: 50px;
+}
+nav li {
+    float: left;
+    padding-right: 25px;
+}
+nav li a {
+    font-size: 1.1rem;
+    color: gray;
+    text-decoration: none;
+}
+nav li a.active{
+    color: black;
+    cursor: default;
+}
+nav li a:hover, nav li a:focus{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+#banner img{
+    width: 65%;
+    height: 350px;
+    margin: auto;
+    margin-top: 60px;
+    display: block;
+    object-fit: cover;
+}
+#titleSite{
+    width: 100%;
+    text-align: center;
+    height: 50px
+}
+#titleSite span{
+    font-size: 2rem;
+    background-color: white;
+    border: 4px solid black;
+    padding: 10px;
+    letter-spacing: 5px;
+    top: 25px;
+
+}
+
+#banner-index{
+    width: 100%;
+    height: 100vh;
+    display: block;
+}
+#banner-index img{
+    width: 100vw;
+    height: 100vh;
+}
+#tsparticles {
+    z-index: 100;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+}
+.ticket{
+    position: absolute;
+    top: 75%;
+    z-index: 102;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+.ticket span{
+    padding: 10px 20px;
+    background-color: #bdb4b1;
+    margin-right: 50px;
+    font-size: 1.1rem;
+    transition-duration: 1s;
+    border-radius: 50px;
+    text-align: center;
+}
+.ticket span:hover{
+    background-color: #0b0b0b;
+    font-size: 1.3rem;
+    transition-duration: 1s;
+}
+.ticket span a{
+    color: white;
+    font-weight: bold;
+}
+.ticket span a:hover {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media (max-width: 600px){
+    #banner{
+        display: none;
+    }
+    nav{
+        margin-top: 180px;
+    }
+    nav ul{
+        height: 80px;
+    }
+    .col-6{
+        flex: none !important;
+    }
+}
+@media (max-width: 878px){
+    .ticket span{
+        display: block;
+        margin-bottom: 20px;
+    }
+    .ticket{
+        top: 65%;
+    }
+}
