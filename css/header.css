@@ -2,6 +2,7 @@ html, body{
     width: 100%;
     height: 100%;
     background-color: #ffff;
+    scroll-behavior: smooth;
 }
 
 nav {
@@ -21,7 +22,6 @@ nav li {
 }
 nav li a {
     font-size: 1.1rem;
-    color: gray;
     text-decoration: none;
 }
 nav li a.active{
@@ -72,14 +72,70 @@ nav li a:hover, nav li a:focus{
     height: 100vh;
     top: 0;
 }
-.ticket{
-    position: absolute;
-    top: 75%;
-    z-index: 102;
-    margin-left: 50%;
-    transform: translate(-50%);
+.ticket .row {
+  border: none;
 }
-.ticket span{
+.ticket .col-sm .row div{
+  width: 100%;
+  text-align: center;
+}
+.img-index{
+  max-height: 330px;
+  height: 100%;
+  opacity: 1;
+  transition: .3s ease-in-out;
+}
+.ticket.container a:hover .img-index{
+  opacity: .2;
+  border-radius: 50%;
+}
+.ticket.container a:hover div:nth-child(2){
+  opacity: 1;
+}
+.ticket.container a div:nth-child(2){
+  opacity: 0;
+  font-size: 2rem;
+  position: absolute;
+  top: calc(165px - 2rem);
+  transition: .4s ease-in-out;
+  background-color: #430505ad;
+  color: white;
+}
+.ticket.container a{
+  margin-left: 50%;
+  transform: translate(-50%);
+}
+.text-presentation{
+  margin: 2% 10%;
+  background-color: white;
+  box-shadow: 1px -1px 12px black;
+  padding: 30px 15px;
+  text-align: center;
+  font-size: 1.4rem;
+}
+.anchor-index{
+  color: black;
+  position: absolute;
+  margin-left: 50%;
+  transform: translate(-50%);
+  z-index: 101;
+  top: 80vh;
+  font-size: 4rem;
+  border: 2px solid;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  line-height: 3.5rem;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+  background-color: transparent;
+}
+.anchor-index:hover{
+  background-color: black;
+  color: white;
+}
+/*.ticket span{
     padding: 10px 20px;
     background-color: #bdb4b1;
     margin-right: 50px;
@@ -101,8 +157,15 @@ nav li a:hover, nav li a:focus{
     color: white;
     text-decoration: none;
     font-weight: bold;
+}*/
+@media (min-width: 450px){
+  #banner-index img, #banner-index, #tsparticles{
+    height: 30vh;
+  }
+  .anchor-index{
+    display: none;
+  }
 }
-
 @media (max-width: 600px){
     #banner{
         display: none;

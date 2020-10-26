@@ -1,0 +1,14 @@
+body, main, .container, .ticket .row, header#header, body, html{
+  background-color: #343a40 !important;
+  box-shadow: none;
+}
+footer{
+  background-color: #141d26;
+}
+.row{
+  background-color: white;
+  box-shadow: 6px -4px 14px black;
+}
+nav li a{
+  color: white;
+}
