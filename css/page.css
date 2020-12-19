@@ -3,6 +3,10 @@
     transform: translate(-50%);
     position: absolute;
 }
+.center-page-indiv{
+    margin-left: 50%;
+    transform: translate(-50%);
+}
 .all{
     width: 100%;
 }
