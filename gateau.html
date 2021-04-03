@@ -37,6 +37,51 @@
     <div class="container">
       <div class="row">
           <div class="col-6">
+              <h2> Paris brest </h2>
+              <br>
+              <div>
+                  6/8 personnes
+              </div>
+              <br>
+              <div>
+                  Pâte à choux, crème au beurre praliné maison
+              </div>
+          </div>
+          <div class="col-6">
+              <div class="slideshow-container">
+                <div class="mySlides1">
+                    <img src="patisserie/gateau/paris_brest.jpg" class="img-patisserie myImg">
+                </div>
+
+                <div class="mySlides1">
+                    <img src="patisserie/gateau/paris_brest2.jpg" class="img-patisserie myImg">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+              </div>
+          </div>
+      </div>
+
+      <div class="row">
+        <div class="col-6">
+              <img src="patisserie/gateau/framboisier.jpg" class="img-patisserie myImg">
+        </div>
+          <div class="col-6">
+              <h2> Framboisier</h2>
+              <br>
+              <div>
+                  10/12 personnes
+              </div>
+              <br>
+              <div>
+                  Génoise, mousseline, framboises
+              </div>
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="col-6">
               <h2> 3 chocolats </h2>
               <br>
               <div>
@@ -184,6 +229,26 @@
         // When the user clicks on <span> (x), close the modal
         span.onclick = function() {
             modal.style.display = "none";
+        }
+
+        var slideIndex = [1,1];
+        var slideId = ["mySlides1", "mySlides2"]
+        showSlides(1, 0);
+        showSlides(1, 1);
+
+        function plusSlides(n, no) {
+          showSlides(slideIndex[no] += n, no);
+        }
+
+        function showSlides(n, no) {
+          var i;
+          var x = document.getElementsByClassName(slideId[no]);
+          if (n > x.length) {slideIndex[no] = 1}
+          if (n < 1) {slideIndex[no] = x.length}
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";
+          }
+          x[slideIndex[no]-1].style.display = "block";
         }
     </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
