@@ -234,7 +234,6 @@
         var slideIndex = [1,1];
         var slideId = ["mySlides1", "mySlides2"]
         showSlides(1, 0);
-        showSlides(1, 1);
 
         function plusSlides(n, no) {
           showSlides(slideIndex[no] += n, no);
@@ -248,7 +247,7 @@
           for (i = 0; i < x.length; i++) {
              x[i].style.display = "none";
           }
-          x[slideIndex[no]-1].style.display = "block";
+            x[slideIndex[no]-1].style.display = "block";
         }
     </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
