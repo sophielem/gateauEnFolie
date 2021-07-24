@@ -37,6 +37,87 @@
     <div class="container">
       <div class="row">
           <div class="col-6">
+              <h2> Number Cake </h2>
+              <br>
+              <div>
+                  14/16 personnes
+              </div>
+              <br>
+              <div>
+                  Base de génoise, crème patissière au citron, divers décors (macaron, fleur, meringue....)
+              </div>
+          </div>
+          <div class="col-6">
+            <div class="slideshow-container">
+              <div class="mySlides2">
+                <img src="patisserie/number-cake/number_cake_citron_i.jpg" class="img-patisserie myImg">
+              </div>
+
+              <div class="mySlides2">
+                <img src="patisserie/number-cake/number_cake_citron_2.jpg" class="img-patisserie myImg">
+              </div>
+
+              <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+            </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-6">
+            <div class="slideshow-container">
+              <div class="mySlides3">
+                <img src="patisserie/number-cake/number_cake_fruit_rouge_l.jpg" class="img-patisserie myImg">
+              </div>
+
+              <div class="mySlides3">
+                <img src="patisserie/number-cake/number_cake_fruit_rouge_l_2.jpg" class="img-patisserie myImg">
+              </div>
+
+              <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+            </div>
+          </div>
+          <div class="col-6">
+              <h2> Number Cake </h2>
+              <br>
+              <div>
+                  14/16 personnes
+              </div>
+              <br>
+              <div>
+                  Base de génoise, crème patissière, fruits rouges, divers décors (macarons, fleurs....)
+              </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-6">
+              <h2> Number Cake </h2>
+              <br>
+              <div>
+                  14/16 personnes
+              </div>
+              <br>
+              <div>
+                  Base de génoise, crème patissière au chocolat et concassé de noisette,divers décors (meringues, fleurs, macaron....)
+              </div>
+          </div>
+          <div class="col-6">
+            <div class="slideshow-container">
+              <div class="mySlides4">
+                <img src="patisserie/number-cake/number_cake_chocolat_v.jpg" class="img-patisserie myImg">
+              </div>
+
+              <div class="mySlides4">
+                <img src="patisserie/number-cake/number_cake_chocolat_2.jpg" class="img-patisserie myImg">
+              </div>
+
+              <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
+            </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-6">
             <div class="slideshow-container">
               <div class="mySlides1">
                 <img src="patisserie/number-cake/number-cake-trois-nutella.jpg" class="img-patisserie myImg">
@@ -130,9 +211,12 @@
         }
 
 
-        var slideIndex = [1,1];
-        var slideId = ["mySlides1", "mySlides2"]
+        var slideIndex = [1,1,1,1];
+        var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4"]
         showSlides(1, 0);
+        showSlides(1, 1);
+        showSlides(1, 2);
+        showSlides(1, 3);
 
         function plusSlides(n, no) {
           showSlides(slideIndex[no] += n, no);

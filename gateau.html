@@ -37,6 +37,51 @@
     <div class="container">
       <div class="row">
           <div class="col-6">
+              <h2> Mousse noix de coco </h2>
+              <br>
+              <div>
+                  12/14 personnes
+              </div>
+              <br>
+              <div>
+                  Disque génoise, noix de coco, meringue
+              </div>
+          </div>
+          <div class="col-6">
+              <div class="slideshow-container">
+                <div class="mySlides2">
+                    <img src="patisserie/gateau/noix_coco.jpg" class="img-patisserie myImg">
+                </div>
+
+                <div class="mySlides2">
+                    <img src="patisserie/gateau/noix_coco_2.jpg" class="img-patisserie myImg">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+              </div>
+          </div>
+      </div>
+
+      <div class="row">
+        <div class="col-6">
+              <img src="patisserie/gateau/mousse_fraise.jpg" class="img-patisserie myImg">
+        </div>
+          <div class="col-6">
+              <h2> Mousse fraise / mûre </h2>
+              <br>
+              <div>
+                  12/14 personnes
+              </div>
+              <br>
+              <div>
+                  Disque génoise, mousse fraise, mousse mûre
+              </div>
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="col-6">
               <h2> Paris brest </h2>
               <br>
               <div>
@@ -234,6 +279,7 @@
         var slideIndex = [1,1];
         var slideId = ["mySlides1", "mySlides2"]
         showSlides(1, 0);
+        showSlides(1, 1);
 
         function plusSlides(n, no) {
           showSlides(slideIndex[no] += n, no);
